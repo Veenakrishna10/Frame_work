@@ -16,7 +16,9 @@ import org.testng.annotations.BeforeMethod;
 		{
 			System.setProperty(chrome_key, chrome_value);
 			driver=new ChromeDriver();
+			//to launch the browser
 			driver.get(base_url);
+			//to enter the url
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 		}
